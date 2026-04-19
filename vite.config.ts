@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  // Configure React Router and path aliases
   plugins: [reactRouter(), tsconfigPaths()],
   ssr: {
     // Keep native Node modules external during SSR bundling
